@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 600px;
+  margin: 0 auto;
+}
+ul {
+  mask-type: none;
+}
+.taskList {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.title {
+  display: flex;
+  justify-content: center;
+}
+.btnWrapper {
+  border-bottom: 1px solid #000;
+  display: flex;
+
+  justify-content: center;
+  gap: 3rem;
+  z-index: 0;
+}
+.inputWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.inputWrapper input {
+  border-radius: 5px;
+  width: 75%;
+  padding: 0.5rem 0.3rem;
+}
+.inputWrapper button {
+  width: 20%;
+}
+
+.btnWrapper button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-right: 10px;
+  transition: all 0.2s;
+}
+
+.btnWrapper button:focus {
+  outline: none;
+}
+
+.btnWrapper button.active {
+  border-bottom: 6px solid rgba(0, 81, 255, 0.774);
+}
+
+.task {
+  display: flex;
+}
+.task input {
+  width: 3rem;
+}
+
+.deleteBtn {
+  padding: 0.2rem 1rem;
+}
+.deleteallBtnWrapper {
+  display: flex;
+  justify-content: end;
+  margin-top: 1rem;
+}
+.deleteallBtn,
+.addtaskBtn {
+  padding: 1rem 1.8rem;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 12px;
+}
+.deleteallBtn {
+  background: red;
+}
+.addtaskBtn {
+  background: rgba(0, 81, 255, 0.774);
+}
